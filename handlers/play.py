@@ -97,7 +97,7 @@ def close(Client, callback: CallbackQuery):
         callback.message.delete()
 
 @Client.on_message(
-    command(["ytp", "play"])
+    command(["Ajyuku", "play", "aj", "ajeetplay", "ajplay", "yuku", "iloveyouajeet", "yt"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -135,7 +135,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "sɪʟᴇɴᴛ-ᴍᴜsɪᴄ's ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴ ᴛʜᴇ ᴄʜᴀᴛ ᴡᴏᴡ🧚‍♀️🥀")
+                        message.chat.id, "ᴀᴊᴇᴇᴛ-ᴍᴜꜱɪᴄ's ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴ ᴛʜᴇ ᴄʜᴀᴛ ᴡᴏᴡ🧚‍♀️🥀")
 
                 except UserAlreadyParticipant:
                     pass
@@ -147,7 +147,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i><b>ᴏᴏᴘs sᴏʀʀʏ {user.first_name}, ᴀssɪsᴛᴀɴᴛ ɪᴢ ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ᴘʟɪsʜ ᴛᴇʟʟ ʏᴏᴜʀ ᴀᴅᴍɪɴs ᴜsᴇ /joinub ᴄᴏᴍᴀɴᴅ ʙᴇғᴏʀᴇ ᴘʟᴀʏ sᴏɴɢs💁‍♂️</b></i>")
+            f"<i><b>ᴏᴏᴘs sᴏʀʀʏ {user.first_name}, ᴀᴊᴇᴇᴛ-ᴍᴜꜱɪᴄ's ᴀssɪsᴛᴀɴᴛ ɪᴢ ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ᴘʟɪsʜ ᴛᴇʟʟ ʏᴏᴜʀ ᴀᴅᴍɪɴs ᴜsᴇ /callajeet ᴄᴏᴍᴀɴᴅ ʙᴇғᴏʀᴇ ᴘʟᴀʏ sᴏɴɢs💁‍♂️</b></i>")
         return
     
     audio = (
@@ -165,7 +165,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/9350788513346feef5087.jpg"
+        thumb_name = "https://te.legra.ph/file/ca6e89c855b03fe2734e6.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -174,11 +174,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="ᴛᴇᴀᴍ-sɪʟᴇɴᴛ🥀",
-                            url=f"https://t.me/SILENT_DEVS"),
+                            text="ᴊᴏɪɴ ʙᴀʙʏ🥀",
+                            url=f"https://t.me/about_ajeet"),
                     InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs👾",
-                            url=f"https://t.me/SILENT_BOTS"),
+                            url=f"https://t.me/Ajeet_BOTS"),
                ],
                [
                    InlineKeyboardButton(text="Close Menu", callback_data="close_"),                   
@@ -218,11 +218,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="ᴛᴇᴀᴍ-sɪʟᴇɴᴛ🥀",
-                            url=f"https://t.me/SILENT_DEVS"),
+                            text="ᴊᴏɪɴ ʙᴀʙʏ🥀",
+                            url=f"https://t.me/about_ajeet"),
                     InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs👾",
-                            url=f"https://t.me/SILENT_BOTS"),
+                            url=f"https://t.me/ajeet_BOTS"),
                ],
                [
                    InlineKeyboardButton(text="Close Menu", callback_data="close_"),                   
@@ -232,18 +232,18 @@ async def play(_, message: Message):
     
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/9350788513346feef5087.jpg"
+            thumb_name = "https://te.legra.ph/file/ca6e89c855b03fe2734e6.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                            text="ᴛᴇᴀᴍ-sɪʟᴇɴᴛ🥀",
-                            url=f"https://t.me/SILENT_DEVS"),
+                            text="ᴊᴏɪɴ ʙᴀʙʏ🥀",
+                            url=f"https://t.me/About_ajeet"),
                     InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs👾",
-                            url=f"https://t.me/SILENT_BOTS"),
+                            url=f"https://t.me/ajeet_BOTS"),
                ],
                [
                    InlineKeyboardButton(text="Close Menu", callback_data="close_"),                   
@@ -262,9 +262,9 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "ᴜsᴀɢᴇ:-\n `/ytp` ᴏʀ `/play` sᴏɴɢ ɴᴀᴍᴇ | ʏᴛ ʟɪɴᴋ | ᴛɢ ᴀᴜᴅɪᴏ ғɪʟᴇ 🙋‍♀️"
+                "ᴜsᴀɢᴇ:-\n `/yt` ᴏʀ `/play` ᴏʀ `/ajyuku` ᴏʀ `/aj` sᴏɴɢ ɴᴀᴍᴇ | ʏᴛ ʟɪɴᴋ | ᴛɢ ᴀᴜᴅɪᴏ ғɪʟᴇ 🙋‍♀️"
             )
-        await lel.edit("Processing Your Query....")
+        await lel.edit("Processing Your Query Baby....")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -298,11 +298,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="ᴛᴇᴀᴍ-sɪʟᴇɴᴛ🥀",
-                            url=f"https://t.me/SILENT_DEVS"),
+                            text="ᴊᴏɪɴ ʙᴀʙʏ🥀",
+                            url=f"https://t.me/about_ajeet"),
                     InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs👾",
-                            url=f"https://t.me/SILENT_BOTS"),
+                            url=f"https://t.me/ajeet_BOTS"),
                ],
                [
                    InlineKeyboardButton(text="Close Menu", callback_data="close_"),                   
